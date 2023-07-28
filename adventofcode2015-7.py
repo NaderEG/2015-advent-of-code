@@ -19,6 +19,8 @@ recurse(wire):
 		signals[wire] = ~int(wires[wire][1])
 	elif(len(wires[wire]) == 2 and not isnumeric(wires[wire])):
 		signals[wire] == ~int(recurse(wires[wire][1]))
+	elif(len(wires[wire]) == 3 and isnumeric(wires[wire][0]) and isnumeric(wires[wire][2])):
+		
 		
 
 
